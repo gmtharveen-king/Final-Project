@@ -1,238 +1,422 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Cup 2026 - United States, Mexico, Canada</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">
-                <h1>⚽ WORLD CUP 2026</h1>
-                <p class="subtitle">United States, Mexico & Canada</p>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#tournaments" class="nav-link">Tournaments</a></li>
-                    <li><a href="#teams" class="nav-link">Teams</a></li>
-                    <li><a href="#schedule" class="nav-link">Schedule</a></li>
-                    <li><a href="#venues" class="nav-link">Venues</a></li>
-                </ul>
-            </nav>
+<!DOCTYPE html><html class="light" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Source+Sans+3:wght@400;600&amp;family=Archivo+Narrow:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@100..900&amp;family=Oswald:wght@100..900&amp;family=Source+Sans+3:wght@100..900&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#bfc9be",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#006233",
+                    "on-primary-container": "#89dba0",
+                    "surface-dim": "#dadada",
+                    "on-error": "#ffffff",
+                    "primary": "#004824",
+                    "secondary": "#705d00",
+                    "on-secondary-fixed-variant": "#544600",
+                    "tertiary-container": "#0b621a",
+                    "tertiary-fixed": "#a3f69c",
+                    "on-tertiary-fixed": "#002204",
+                    "secondary-fixed-dim": "#e9c400",
+                    "inverse-primary": "#86d89d",
+                    "tertiary": "#00480e",
+                    "primary-fixed": "#a1f5b7",
+                    "primary-fixed-dim": "#86d89d",
+                    "background": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffe16d",
+                    "inverse-surface": "#2f3131",
+                    "surface-tint": "#146c3c",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary-fixed": "#00210d",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#88d982",
+                    "on-tertiary-container": "#8adc84",
+                    "surface": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#00522a",
+                    "secondary-container": "#fcd400",
+                    "surface-container": "#eeeeee",
+                    "outline": "#6f7a70",
+                    "on-tertiary-fixed-variant": "#005312",
+                    "on-surface-variant": "#3f4940",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#221b00",
+                    "surface-container-high": "#e8e8e8",
+                    "inverse-on-surface": "#f1f1f1",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-background": "#1a1c1c",
+                    "on-secondary-container": "#6e5c00",
+                    "on-surface": "#1a1c1c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "16px",
+                    "lg": "24px",
+                    "margin-mobile": "16px",
+                    "xs": "4px",
+                    "sm": "8px",
+                    "xl": "32px",
+                    "margin-desktop": "48px",
+                    "md": "16px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Source Sans 3"],
+                    "label-sm": ["Archivo Narrow"],
+                    "label-bold": ["Archivo Narrow"],
+                    "body-md": ["Source Sans 3"],
+                    "headline-lg-mobile": ["Oswald"],
+                    "headline-lg": ["Oswald"],
+                    "headline-md": ["Oswald"],
+                    "display-lg": ["Oswald"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script></head><body class="flex flex-col min-h-screen">
+    <!-- TopAppBar -->
+    <header class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container fixed top-0 w-full z-50 shadow-md border-b-2 border-primary-container dark:border-outline-variant flex items-center justify-between px-margin-mobile h-16 w-full">
+        <div class="flex items-center gap-4">
+            <button class="active:scale-95 transition-transform duration-150">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUZ8LxBS30POu9cbdv0y1O_w7aV1rH0HOzQtVDJb5kXGmWg4ZUdQ6nhePT73m0t1nL7LbL0yqQj2r42ujnSkyYDv_QD7k9f2JU-4ThxsWPU6sm2p0BDv4HyVzGUXgJb0aoBe4NwFNtb7OTmDIVy-uBQzYeEuqXg5Jwrj1LxjUDJkctgF_Hm07-Ubxs883dGhxIpf16u-XaTxvVa63IPQTCgAi6oHlBmica1eblBgKF5fXp2-HmeGCQ" alt="World Cup 2026 Logo" class="h-8 w-auto object-contain"><h1 class="font-display-lg text-headline-md text-secondary-container dark:text-secondary-fixed tracking-tight uppercase">Global Cup 2026</h1>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined">account_circle</span>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h2 class="hero-title">The Beautiful Game Comes Home</h2>
-                <p class="hero-subtitle">Experience the world's greatest football tournament across North America</p>
-                <button class="cta-button">Get Tickets</button>
-            </div>
-            <div class="hero-background">
-                <div class="floating-ball"></div>
-                <div class="accent-shape shape-1"></div>
-                <div class="accent-shape shape-2"></div>
-            </div>
-        </section>
-
-        <!-- Featured Tournament Info -->
-        <section id="tournaments" class="tournaments">
-            <h2 class="section-title">Tournament Highlights</h2>
-            <div class="tournament-grid">
-                <article class="tournament-card">
-                    <div class="card-icon">🏆</div>
-                    <h3>Expanded Format</h3>
-                    <p>48 teams competing for glory in the first expanded World Cup format</p>
-                    <div class="card-accent"></div>
-                </article>
-
-                <article class="tournament-card">
-                    <div class="card-icon">🌍</div>
-                    <h3>Three Nations</h3>
-                    <p>Historic co-hosting by the United States, Mexico, and Canada</p>
-                    <div class="card-accent"></div>
-                </article>
-
-                <article class="tournament-card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Epic Moments</h3>
-                    <p>Watch legendary performances and unforgettable matches</p>
-                    <div class="card-accent"></div>
-                </article>
+    <main class="flex-grow pt-16 pb-20">
+        <!-- 1. Banner Section -->
+        <section class="relative w-full h-[320px] md:h-[450px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" data-alt="A cinematic, low-angle shot of a massive, futuristic football stadium during a world cup final." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnLFfVgBUeas0uJB6yJoQIVloG8BSHUaQ6D6SZxLk9Wxru-zzr0MSuJj-6uwJlXh34zCVyS8HCS4f3NikJ7R9hg4l2Rf4ThFtgYR30OTKO7ERQSS02TKnWcbq1cT8PybirkC_zQeGcdeLE4pYtwU1rwDoPi2LnYlvTgMxt7SSvg8Ns6BoCBl6JIPlNRdE18KHpDVKbZ9GBpoigTYZzcoo9reAnl4He07LOnE97rhgTIHXEa9bhcdHJ')"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+            <div class="relative h-full flex flex-col justify-end p-margin-mobile pb-lg">
+                <span class="text-secondary-container font-label-bold text-label-bold mb-xs tracking-widest uppercase">Road to Glory 2026</span>
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-white leading-tight mb-md">THE JOURNEY TO THE<br>CROWN BEGINS</h2>
+                <button class="bg-primary-container text-on-primary-container font-label-bold text-label-bold px-xl py-md rounded-lg w-fit border-b-2 border-primary shadow-lg hover:brightness-110 active:scale-95 transition-all">
+                    VIEW MATCHES
+                </button>
             </div>
         </section>
 
-        <!-- Teams Section -->
-        <section id="teams" class="teams">
-            <h2 class="section-title">Participating Nations</h2>
-            <div class="teams-content">
-                <div class="teams-stats">
-                    <div class="stat-box">
-                        <span class="stat-number">48</span>
-                        <span class="stat-label">Teams</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">80</span>
-                        <span class="stat-label">Matches</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">16</span>
-                        <span class="stat-label">Venues</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">30</span>
-                        <span class="stat-label">Days</span>
+        <!-- New: Buy Tickets Section -->
+        <section class="py-xl px-margin-mobile bg-primary text-white overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container opacity-10 rounded-full -mr-16 -mt-16"></div>
+            <div class="relative z-10">
+                <div class="flex items-center gap-sm mb-sm">
+                    <span class="material-symbols-outlined text-secondary-fixed">confirmation_number</span>
+                    <span class="font-label-bold text-label-bold uppercase tracking-widest text-secondary-fixed">Live the Experience</span>
+                </div>
+                <h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-md leading-tight">BE PART OF HISTORY AT GLOBAL CUP 2026</h3>
+                <div class="grid grid-cols-1 gap-md mb-lg">
+                    <div class="bg-white/10 backdrop-blur-md p-md rounded-xl border border-white/20">
+                        <div class="flex justify-between items-center mb-sm">
+                            <p class="font-label-bold text-label-bold uppercase">Standard Pass</p>
+                            <p class="text-secondary-fixed font-headline-md text-headline-md">$149<span class="text-sm font-normal">/match</span></p>
+                        </div>
+                        <p class="text-body-md text-white/80">Access to standard seating and fan zones.</p>
                     </div>
                 </div>
-                <article class="teams-description">
-                    <h3>Global Competition</h3>
-                    <p>The 2026 FIFA World Cup will see 48 nations battle it out across three nations. Teams will be divided into 16 groups of 3, creating unprecedented competition and opportunities for every squad to make their mark on the world stage.</p>
-                    <p>From emerging powerhouses to traditional champions, every team brings their unique style, passion, and determination to win the most prestigious trophy in football.</p>
-                </article>
+                <button class="w-full bg-secondary-container text-on-secondary-container font-display-lg text-headline-md py-lg rounded-xl shadow-xl hover:bg-secondary-fixed transition-colors btn-press">
+                    BUY TICKETS NOW
+                </button>
+                <p class="text-center text-label-sm mt-md opacity-60">Official Ticketing Partner of Global Cup 2026</p>
             </div>
         </section>
 
-        <!-- Schedule Section -->
-        <section id="schedule" class="schedule">
-            <h2 class="section-title">Tournament Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-item timeline-left">
-                    <div class="timeline-dot"></div>
-                    <article class="timeline-content">
-                        <h3>Group Stage</h3>
-                        <p class="timeline-date">June 12 - July 5, 2026</p>
-                        <p>48 teams compete in 80 matches across all three countries. Every match is crucial as teams battle for advancement.</p>
-                    </article>
+        <!-- 2. World Cup History Timeline (Milestones) -->
+        <section class="py-lg px-margin-mobile">
+            <div class="flex items-center justify-between mb-md">
+                <h3 class="font-headline-md text-headline-md text-primary uppercase">Legendary Milestones</h3>
+                <span class="material-symbols-outlined text-secondary">history_edu</span>
+            </div>
+            <div class="relative timeline-line space-y-lg pl-10">
+                <!-- 2022 Milestone -->
+                <div class="relative group">
+                    <div class="absolute -left-[30px] top-0 w-5 h-5 bg-secondary-container border-4 border-white rounded-full z-10 shadow-sm transition-transform group-hover:scale-125"></div>
+                    <div class="bg-white p-md rounded-xl stadium-shadow border-l-4 border-secondary-container transition-all hover:translate-x-1">
+                        <span class="font-label-bold text-label-bold text-secondary mb-xs block">QATAR 2022</span>
+                        <h4 class="font-headline-md text-headline-md leading-tight mb-sm">Messi's Ultimate Triumph</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Lionel Messi leads Argentina to their third title in a historic final against France, cementing his legacy as the greatest.</p>
+                    </div>
                 </div>
-
-                <div class="timeline-item timeline-right">
-                    <div class="timeline-dot"></div>
-                    <article class="timeline-content">
-                        <h3>Round of 16</h3>
-                        <p class="timeline-date">July 6 - 10, 2026</p>
-                        <p>The intensity ramps up as 16 teams remain. Knockout matches decide who advances to the quarterfinals.</p>
-                    </article>
+                <!-- 2002 Milestone -->
+                <div class="relative group">
+                    <div class="absolute -left-[30px] top-0 w-5 h-5 bg-primary-container border-4 border-white rounded-full z-10 shadow-sm transition-transform group-hover:scale-125"></div>
+                    <div class="bg-white p-md rounded-xl stadium-shadow border-l-4 border-primary-container transition-all hover:translate-x-1">
+                        <span class="font-label-bold text-label-bold text-primary mb-xs block">KOREA/JAPAN 2002</span>
+                        <h4 class="font-headline-md text-headline-md leading-tight mb-sm">Brazil's Penta Victory</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Ronaldo Fenômeno shines as Brazil secures a record-breaking fifth World Cup title in a perfect tournament run.</p>
+                    </div>
                 </div>
-
-                <div class="timeline-item timeline-left">
-                    <div class="timeline-dot"></div>
-                    <article class="timeline-content">
-                        <h3>Quarterfinals</h3>
-                        <p class="timeline-date">July 11 - 13, 2026</p>
-                        <p>Eight teams remain. Dreams continue or end on the pitch as quarter-final matches determine the elite four.</p>
-                    </article>
-                </div>
-
-                <div class="timeline-item timeline-right">
-                    <div class="timeline-dot"></div>
-                    <article class="timeline-content">
-                        <h3>Final Tournament</h3>
-                        <p class="timeline-date">July 14 - 19, 2026</p>
-                        <p>Semifinals and the grand finale. Two teams battle for football immortality in the championship match.</p>
-                    </article>
+                <!-- 1930 Milestone -->
+                <div class="relative group">
+                    <div class="absolute -left-[30px] top-0 w-5 h-5 bg-outline border-4 border-white rounded-full z-10 shadow-sm transition-transform group-hover:scale-125"></div>
+                    <div class="bg-white p-md rounded-xl stadium-shadow border-l-4 border-outline transition-all hover:translate-x-1">
+                        <span class="font-label-bold text-label-bold text-on-surface-variant mb-xs block">URUGUAY 1930</span>
+                        <h4 class="font-headline-md text-headline-md leading-tight mb-sm">The Dawn of Greatness</h4>
+                        <p class="font-body-md text-body-md text-on-surface-variant">The inaugural tournament where hosts Uruguay became the first-ever world champions in Montevideo.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Venues Section -->
-        <section id="venues" class="venues">
-            <h2 class="section-title">Host Stadiums</h2>
-            <div class="venues-grid">
-                <article class="venue-card">
-                    <div class="venue-header usa">
-                        <h3>United States</h3>
-                    </div>
-                    <div class="venue-body">
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>MetLife Stadium - New Jersey</span>
-                        </div>
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>AT&T Stadium - Texas</span>
-                        </div>
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>Arrowhead Stadium - Kansas City</span>
-                        </div>
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>SoFi Stadium - California</span>
-                        </div>
-                    </div>
-                </article>
+        <!-- New: Winners History Section -->
+        <section class="py-lg px-margin-mobile bg-surface-container">
+            <div class="flex items-center gap-sm mb-md">
+                <span class="material-symbols-outlined text-primary">emoji_events</span>
+                <h3 class="font-headline-md text-headline-md text-primary uppercase">Champions Hall</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-md">
+                <!-- Most Recent -->
+                <div class="bg-white p-md rounded-xl stadium-shadow flex flex-col items-center">
+                    <span class="font-label-bold text-label-sm text-secondary mb-xs">2022</span>
+                    <div class="w-12 h-8 bg-cover bg-center shadow-sm mb-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWL1Ue61tnCFyP_jovramwCrh15LY1DW_jgtOgc1w36kcxAx7J83xvGxEJ24X2Vsqta5JFtd0OXbF2PsTZWKLohEdvTXMgbO7aP_zWRKMPXpe5rCuO88CMnMdosyJm8jyYU6YpBOPnNO2cgsxRzpW99CBAQn3bn1uApRuHKRjGZkrNhgrKRuCFe9LV-1BRPVbhYM5XkDy3CLj0i6TRbvWifI61M7u57zAGFi1ZQWSBbeZwCmd6WnUx')"></div>
+                    <p class="font-label-bold text-label-bold">ARGENTINA</p>
+                </div>
+                <div class="bg-white p-md rounded-xl stadium-shadow flex flex-col items-center">
+                    <span class="font-label-bold text-label-sm text-secondary mb-xs">2018</span>
+                    <div class="w-12 h-8 bg-cover bg-center shadow-sm mb-sm" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCONFwQNbJ6ivwuPFJzE301o2c8m2WN1VL7U-BKJ3eq6ZPr8WQUzUixmLmQJkqNSzXveRDzT9i-Vvse47MFAW5gyJs2ChBfEc4UHmLuztIofRm7YqRu3x00QJGRm0o5uh9kJrdXMUXm_L6nrPjWigNxh9X5Wnzjr_sB0sgh2cccQkWgWOhTGxoOG3QFmvhYQmigqR3Lfb3iu9fDtjxaOdMzSyl961kSoYqLWiEmz5z_VuqydEYhPXCv')"></div>
+                    <p class="font-label-bold text-label-bold">FRANCE</p>
+                </div>
+                <div class="bg-white p-md rounded-xl stadium-shadow flex flex-col items-center">
+                    <span class="font-label-bold text-label-sm text-secondary mb-xs">2014</span>
+                    <div class="w-12 h-8 bg-gray-200 shadow-sm mb-sm flex items-center justify-center font-bold text-[8px] text-gray-500">GERMANY</div>
+                    <p class="font-label-bold text-label-bold">GERMANY</p>
+                </div>
+                <div class="bg-white p-md rounded-xl stadium-shadow flex flex-col items-center">
+                    <span class="font-label-bold text-label-sm text-secondary mb-xs">2010</span>
+                    <div class="w-12 h-8 bg-gray-200 shadow-sm mb-sm flex items-center justify-center font-bold text-[8px] text-gray-500">SPAIN</div>
+                    <p class="font-label-bold text-label-bold">SPAIN</p>
+                </div>
+            </div>
+            <button class="w-full mt-md py-sm font-label-bold text-label-bold text-primary border border-primary/20 rounded-lg">VIEW FULL HISTORY (1930-2022)</button>
+        </section><section class="py-lg px-margin-mobile bg-white">
+  <div class="flex items-center gap-sm mb-md">
+    <span class="material-symbols-outlined text-primary">leaderboard</span>
+    <h3 class="font-headline-md text-headline-md text-primary uppercase">Titles by Nation</h3>
+  </div>
+  <div class="grid grid-cols-1 gap-sm">
+    <div class="flex items-center justify-between p-md bg-surface-container-low rounded-xl border border-outline-variant/20">
+      <div class="flex items-center gap-md">
+        <span class="text-2xl">🇧🇷</span>
+        <span class="font-label-bold text-label-bold uppercase">Brazil</span>
+      </div>
+      <span class="font-headline-md text-primary">5 <span class="text-sm font-normal">Titles</span></span>
+    </div>
+    <div class="flex items-center justify-between p-md bg-surface-container-low rounded-xl border border-outline-variant/20">
+      <div class="flex items-center gap-md">
+        <span class="text-2xl">🇩🇪</span>
+        <span class="font-label-bold text-label-bold uppercase">Germany</span>
+      </div>
+      <span class="font-headline-md text-primary">4 <span class="text-sm font-normal">Titles</span></span>
+    </div>
+    <div class="flex items-center justify-between p-md bg-surface-container-low rounded-xl border border-outline-variant/20">
+      <div class="flex items-center gap-md">
+        <span class="text-2xl">🇮🇹</span>
+        <span class="font-label-bold text-label-bold uppercase">Italy</span>
+      </div>
+      <span class="font-headline-md text-primary">4 <span class="text-sm font-normal">Titles</span></span>
+    </div>
+    <div class="flex items-center justify-between p-md bg-surface-container-low rounded-xl border border-outline-variant/20">
+      <div class="flex items-center gap-md">
+        <span class="text-2xl">🇦🇷</span>
+        <span class="font-label-bold text-label-bold uppercase">Argentina</span>
+      </div>
+      <span class="font-headline-md text-primary">3 <span class="text-sm font-normal">Titles</span></span>
+    </div>
+    <div class="flex items-center justify-between p-md bg-surface-container-low rounded-xl border border-outline-variant/20">
+      <div class="flex items-center gap-md">
+        <span class="text-2xl">🇫🇷</span>
+        <span class="font-label-bold text-label-bold uppercase">France</span>
+      </div>
+      <span class="font-headline-md text-primary">2 <span class="text-sm font-normal">Titles</span></span>
+    </div>
+    <div class="flex items-center justify-between p-md bg-surface-container-low rounded-xl border border-outline-variant/20">
+      <div class="flex items-center gap-md">
+        <span class="text-2xl">🇺🇾</span>
+        <span class="font-label-bold text-label-bold uppercase">Uruguay</span>
+      </div>
+      <span class="font-headline-md text-primary">2 <span class="text-sm font-normal">Titles</span></span>
+    </div>
+    <div class="flex items-center justify-between p-md bg-surface-container-low rounded-xl border border-outline-variant/20">
+      <div class="flex items-center gap-md">
+        <span class="text-2xl">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+        <span class="font-label-bold text-label-bold uppercase">England</span>
+      </div>
+      <span class="font-headline-md text-primary">1 <span class="text-sm font-normal">Title</span></span>
+    </div>
+    <div class="flex items-center justify-between p-md bg-surface-container-low rounded-xl border border-outline-variant/20">
+      <div class="flex items-center gap-md">
+        <span class="text-2xl">🇪🇸</span>
+        <span class="font-label-bold text-label-bold uppercase">Spain</span>
+      </div>
+      <span class="font-headline-md text-primary">1 <span class="text-sm font-normal">Title</span></span>
+    </div>
+  </div>
+</section>
 
-                <article class="venue-card">
-                    <div class="venue-header mexico">
-                        <h3>Mexico</h3>
+        <!-- 3. All Countries Horizontal Scroll (Contenders) -->
+        <section class="bg-surface-container-low py-lg">
+            <div class="px-margin-mobile flex items-center justify-between mb-md">
+                <h3 class="font-headline-md text-headline-md text-primary uppercase">Contenders 2026</h3>
+                <a class="text-primary font-label-bold text-label-bold flex items-center gap-xs" href="#">VIEW ALL <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+            </div>
+            <div class="flex overflow-x-auto gap-md px-margin-mobile pb-md scroll-hide">
+                <!-- Argentina -->
+                <div class="flex-shrink-0 w-32 group cursor-pointer">
+                    <div class="w-full aspect-square bg-white rounded-2xl stadium-shadow flex items-center justify-center mb-sm border-2 border-transparent group-hover:border-secondary-container transition-all group-hover:scale-105 active:scale-95 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWL1Ue61tnCFyP_jovramwCrh15LY1DW_jgtOgc1w36kcxAx7J83xvGxEJ24X2Vsqta5JFtd0OXbF2PsTZWKLohEdvTXMgbO7aP_zWRKMPXpe5rCuO88CMnMdosyJm8jyYU6YpBOPnNO2cgsxRzpW99CBAQn3bn1uApRuHKRjGZkrNhgrKRuCFe9LV-1BRPVbhYM5XkDy3CLj0i6TRbvWifI61M7u57zAGFi1ZQWSBbeZwCmd6WnUx')"></div>
                     </div>
-                    <div class="venue-body">
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>Estadio Azteca - Mexico City</span>
-                        </div>
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>Estadio BBVA - Monterrey</span>
-                        </div>
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>Estadio Guadalajara - Guadalajara</span>
-                        </div>
+                    <p class="text-center font-label-bold text-label-bold uppercase">Argentina</p>
+                </div>
+                <!-- Brazil -->
+                <div class="flex-shrink-0 w-32 group cursor-pointer">
+                    <div class="w-full aspect-square bg-white rounded-2xl stadium-shadow flex items-center justify-center mb-sm border-2 border-transparent group-hover:border-primary-container transition-all group-hover:scale-105 active:scale-95 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPbmr9AxOO8iZA9Bo-V9tsLBPqwEuJx62lcCLgWwA4DtXjTLIRAfrgXCk8ReU_PIxTUZTuy-llahRwIsJ0TPkB-_YrvUe0EC0AO7bXq1ZIPA_sc3qwSEkRKIq-b4FFrEmyFhMDLZU640sCpWLia7doiEP6p8uR-QouxRLVBHKoHP25dnWAlFhiWiPMpex6048JFq9sa2DlzMyGSwkvcx3_ibe0ohPb83lkl9QFZcR1yhOJy8YDHHUR')"></div>
                     </div>
-                </article>
-
-                <article class="venue-card">
-                    <div class="venue-header canada">
-                        <h3>Canada</h3>
+                    <p class="text-center font-label-bold text-label-bold uppercase">Brazil</p>
+                </div>
+                <!-- France -->
+                <div class="flex-shrink-0 w-32 group cursor-pointer">
+                    <div class="w-full aspect-square bg-white rounded-2xl stadium-shadow flex items-center justify-center mb-sm border-2 border-transparent group-hover:border-blue-600 transition-all group-hover:scale-105 active:scale-95 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCONFwQNbJ6ivwuPFJzE301o2c8m2WN1VL7U-BKJ3eq6ZPr8WQUzUixmLmQJkqNSzXveRDzT9i-Vvse47MFAW5gyJs2ChBfEc4UHmLuztIofRm7YqRu3x00QJGRm0o5uh9kJrdXMUXm_L6nrPjWigNxh9X5Wnzjr_sB0sgh2cccQkWgWOhTGxoOG3QFmvhYQmigqR3Lfb3iu9fDtjxaOdMzSyl961kSoYqLWiEmz5z_VuqydEYhPXCv')"></div>
                     </div>
-                    <div class="venue-body">
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>BMO Field - Toronto</span>
-                        </div>
-                        <div class="venue-item">
-                            <span class="venue-icon">🏟️</span>
-                            <span>BC Place - Vancouver</span>
-                        </div>
+                    <p class="text-center font-label-bold text-label-bold uppercase">France</p>
+                </div>
+                <!-- England -->
+                <div class="flex-shrink-0 w-32 group cursor-pointer">
+                    <div class="w-full aspect-square bg-white rounded-2xl stadium-shadow flex items-center justify-center mb-sm border-2 border-transparent group-hover:border-red-500 transition-all group-hover:scale-105 active:scale-95 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-80" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlOqa9-Fb-6KbRkmpBPFX_oA7PxQ7PfpVXhSEKcyAwK74Z_nHiQBi1uv7rLAZlqDE-hswOvC1CtPik1oB1SoRYXjl9V_ulX9tJDs--KoPqvd255wCGNTCHxVS5mkB4qjBwN4kHBy2Unlr6grXX4DvFiLRYLZf1GbHclhU2jgKxxWodzMgQgIcHxOsf45jExRaDgQXGAhNpPkBGRApLaPf0dc1z85LVP1LtkycUvt0E2tZAFXVcUE4l')"></div>
                     </div>
-                </article>
+                    <p class="text-center font-label-bold text-label-bold uppercase">England</p>
+                </div>
             </div>
         </section>
+
+        <!-- 4. Prediction Interactive Section (Fan Predictions) -->
+        <section class="py-lg px-margin-mobile">
+            <h3 class="font-headline-md text-headline-md text-primary mb-md uppercase">Fan Predictions 2026</h3>
+            <!-- Win Poll -->
+            <div class="bg-white p-md rounded-xl stadium-shadow mb-lg">
+                <div class="flex items-center gap-sm mb-md">
+                    <span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+                    <h4 class="font-body-lg text-body-lg font-bold">Who will win in 2026?</h4>
+                </div>
+                <div class="space-y-sm">
+                    <button class="w-full text-left p-md rounded-lg bg-surface-container hover:bg-primary-container hover:text-white transition-all flex items-center justify-between group" onclick="vote(this)">
+                        <span class="font-label-bold text-label-bold">BRAZIL</span>
+                        <span class="opacity-0 group-[.voted]:opacity-100 transition-opacity material-symbols-outlined">check_circle</span>
+                    </button>
+                    <button class="w-full text-left p-md rounded-lg bg-surface-container hover:bg-primary-container hover:text-white transition-all flex items-center justify-between group" onclick="vote(this)">
+                        <span class="font-label-bold text-label-bold">ARGENTINA</span>
+                        <span class="opacity-0 group-[.voted]:opacity-100 transition-opacity material-symbols-outlined">check_circle</span>
+                    </button>
+                    <button class="w-full text-left p-md rounded-lg bg-surface-container hover:bg-primary-container hover:text-white transition-all flex items-center justify-between group" onclick="vote(this)">
+                        <span class="font-label-bold text-label-bold">USA</span>
+                        <span class="opacity-0 group-[.voted]:opacity-100 transition-opacity material-symbols-outlined">check_circle</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Scorer Poll -->
+            <div class="bg-primary p-md rounded-xl stadium-shadow text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-md opacity-10">
+                    <span class="material-symbols-outlined text-[64px]">sports_soccer</span>
+                </div>
+                <div class="flex items-center gap-sm mb-md relative z-10">
+                    <span class="material-symbols-outlined text-secondary-fixed">workspace_premium</span>
+                    <h4 class="font-body-lg text-body-lg font-bold">2026 Top Scorer Prediction</h4>
+                </div>
+                <div class="grid grid-cols-2 gap-sm relative z-10">
+                    <button class="p-md rounded-lg border border-primary-fixed-dim bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-bold text-label-bold btn-press" onclick="vote(this)">MBAPPÉ</button>
+                    <button class="p-md rounded-lg border border-primary-fixed-dim bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-bold text-label-bold btn-press" onclick="vote(this)">HAALAND</button>
+                    <button class="p-md rounded-lg border border-primary-fixed-dim bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-bold text-label-bold btn-press" onclick="vote(this)">VINICIUS JR</button>
+                    <button class="p-md rounded-lg border border-primary-fixed-dim bg-primary-container hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-bold text-label-bold btn-press" onclick="vote(this)">BELLINGHAM</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- New: Footer Section -->
+        <footer class="bg-inverse-surface text-surface-variant py-xl px-margin-mobile pb-32">
+            <div class="flex flex-col items-center mb-xl">
+                <h2 class="font-display-lg text-headline-md text-secondary-fixed tracking-tight mb-md">GLOBAL CUP 2026</h2>
+                <div class="flex gap-lg">
+                    <span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer">facebook</span>
+                    <span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer">camera_alt</span>
+                    <span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer">alternate_email</span>
+                    <span class="material-symbols-outlined hover:text-secondary-fixed cursor-pointer">play_circle</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-xl mb-xl">
+                <div class="space-y-sm">
+                    <h4 class="font-label-bold text-white uppercase text-sm mb-md">TOURNAMENT</h4>
+                    <p class="text-label-sm hover:text-white cursor-pointer">Matches</p>
+                    <p class="text-label-sm hover:text-white cursor-pointer">Teams</p>
+                    <p class="text-label-sm hover:text-white cursor-pointer">Standings</p>
+                    <p class="text-label-sm hover:text-white cursor-pointer">Venues</p>
+                </div>
+                <div class="space-y-sm">
+                    <h4 class="font-label-bold text-white uppercase text-sm mb-md">SUPPORT</h4>
+                    <p class="text-label-sm hover:text-white cursor-pointer">Tickets</p>
+                    <p class="text-label-sm hover:text-white cursor-pointer">Contact Us</p>
+                    <p class="text-label-sm hover:text-white cursor-pointer">Privacy Policy</p>
+                    <p class="text-label-sm hover:text-white cursor-pointer">Terms of Use</p>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-lg text-center">
+                <p class="text-[10px] opacity-60">© 2026 GLOBAL CUP FEDERATION. ALL RIGHTS RESERVED.</p>
+                <p class="text-[10px] opacity-60 mt-xs italic">Official Tournament Management System - Pitch Performance v4.0</p>
+            </div>
+        </footer>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>About World Cup 2026</h4>
-                <p>The FIFA World Cup 2026 will be the 23rd FIFA World Cup, the quadrennial international football championship tournament.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#tournaments">Tournaments</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#venues">Venues</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">Facebook</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 World Cup. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+    <!-- BottomNavBar -->
+    <nav class="bg-surface-container-highest dark:bg-inverse-surface fixed bottom-0 w-full z-50 rounded-t-xl shadow-[0_-4px_12px_rgba(0,0,0,0.05)] flex justify-around items-center pt-2 pb-6 px-4">
+        <a class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-4 py-1 active:scale-90 transition-all duration-200" href="#">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+            <span class="font-label-bold text-[10px]">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary active:scale-90 transition-all duration-200" href="#">
+            <span class="material-symbols-outlined">history</span>
+            <span class="font-label-bold text-[10px]">History</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary active:scale-90 transition-all duration-200" href="#">
+            <span class="material-symbols-outlined">groups</span>
+            <span class="font-label-bold text-[10px]">Teams</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-surface-variant hover:text-primary active:scale-90 transition-all duration-200" href="#">
+            <span class="material-symbols-outlined">military_tech</span>
+            <span class="font-label-bold text-[10px]">Predict</span>
+        </a>
+    </nav>
+
+    <script class="">
+        function vote(btn) {
+            const parent = btn.parentElement;
+            const buttons = parent.querySelectorAll('button');
+            buttons.forEach(b => {
+                b.classList.remove('voted', 'bg-primary-container', 'text-white', 'bg-secondary-container', 'text-on-secondary-container');
+                b.classList.add('bg-surface-container');
+                if(btn.closest('.bg-primary')) {
+                    b.classList.add('bg-primary-container');</script></body></html>
